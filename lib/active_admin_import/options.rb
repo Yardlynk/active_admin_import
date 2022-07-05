@@ -12,6 +12,7 @@ module ActiveAdminImport
       :before_batch_import,
       :after_batch_import,
       :on_duplicate_key_update,
+      :on_exception,
       :timestamps,
       :ignore,
       :template,

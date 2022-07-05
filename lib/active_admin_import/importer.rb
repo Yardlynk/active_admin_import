@@ -108,6 +108,10 @@ module ActiveAdminImport
       headers.values.index(header_key)
     end
 
+    def run_callback!(name)
+      run_callback(name)
+    end
+
     protected
 
     def process_file

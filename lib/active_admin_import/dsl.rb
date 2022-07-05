@@ -100,6 +100,7 @@ module ActiveAdminImport
           Rails.logger.error(I18n.t('active_admin_import.file_error', message: e.message))
           Rails.logger.error(e.backtrace.join("\n"))
           flash[:error] = I18n.t('active_admin_import.file_error', message: e.message[0..200])
+          @importer.run_callback!(:on_exception)
         end
         redirect_to options[:back]
       end
