@@ -15,6 +15,7 @@ module ActiveAdminImport
       :after_import,
       :before_batch_import,
       :after_batch_import,
+      :on_exception,
       :headers_rewrites,
       :batch_size,
       :batch_transaction,
